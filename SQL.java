@@ -17,7 +17,7 @@ public class SQL {
     public static void polacz () {
         try {
             Class.forName("org.postgresql.Driver");
-            connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/JediManagementSystem", "postgres", "academik1718");
+            connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/JediManagementSystem", "postgres", "*********");
 
             statement = connection.createStatement(); /// select - execute query; create, drop - execute; insertInto, delete, set - executeUpdated
 
